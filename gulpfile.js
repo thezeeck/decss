@@ -3,15 +3,14 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade'),
     babel = require('gulp-babel'),
-    cssmin = require('gulp-cssmin'),
-    rename = require('gulp-rename'),
+    //cssmin = require('gulp-cssmin'),
+    //rename = require('gulp-rename'),
     config = {
       style: {
         main: './app/sass/cssef.scss',
         watch: './app/**/*.scss',
         test: './test/css',
         prod: './prod/css'
-        minTarget: './test/css/cssef.css'
       },
       html: {
         watch: './app/*.html'
@@ -42,7 +41,7 @@ gulp.task('server', function (){
 gulp.task('build:css', function (){
   return gulp.src(config.style.main)
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest(config.style.ouput));
+    .pipe(gulp.dest(config.style.test));
 });
 
 gulp.task('build:js', function() {
@@ -50,7 +49,7 @@ gulp.task('build:js', function() {
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		.pipe(gulp.dest(config.js.ouput));
+		.pipe(gulp.dest(config.js.test));
 });
 
 gulp.task('build:jade', function(){
@@ -58,7 +57,7 @@ gulp.task('build:jade', function(){
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest(config.jade.ouput));
+    .pipe(gulp.dest(config.jade.test));
 });
 
 gulp.task('watch', function() {
