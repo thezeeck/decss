@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     //rename = require('gulp-rename'),
     config = {
       style: {
-        main: './app/sass/cssef.scss',
+        main: './app/sass/app.scss',
         watch: './app/**/*.scss',
         test: './test/css',
         prod: './prod/css'
