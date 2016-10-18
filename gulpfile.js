@@ -29,7 +29,7 @@ var gulp = require('gulp'),
       }
     };
 
-gulp.task('server', function (){
+gulp.task('server', function () {
   gulp.src('./build')
     .pipe(webserver({
       host: '0.0.0.0',
@@ -38,7 +38,7 @@ gulp.task('server', function (){
     }));
 });
 
-gulp.task('build:css', function (){
+gulp.task('build:css', function () {
   return gulp.src(config.style.main)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest(config.style.test));
@@ -52,7 +52,7 @@ gulp.task('build:js', function() {
 		.pipe(gulp.dest(config.js.test));
 });
 
-gulp.task('build:jade', function(){
+gulp.task('build:jade', function() {
   return gulp.src(config.jade.main)
     .pipe(jade({
       pretty: true
