@@ -23,6 +23,7 @@ var gulp = require('gulp'),
       },
       jade: {
         main: './app/index.jade',
+        lib: './app/lib/**/*.jade',
         watch: './app/**/*.jade',
         test: './test',
         prod: './prod'
@@ -60,12 +61,20 @@ gulp.task('build:jade', function() {
     .pipe(gulp.dest(config.jade.test));
 });
 
+gulp.task('build:sections', function() {
+  return gulp.src(config.jade.lib)
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest(config.jade.test));
+});
+
 gulp.task('watch', function() {
   gulp.watch(config.js.watch, ['build:js']);
   gulp.watch(config.style.watch, ['build:css']);
   gulp.watch(config.jade.watch, ['build:jade']);
 });
 
-gulp.task('build', ['build:css', 'build:js', 'build:jade'])
+gulp.task('build', ['build:css', 'build:js', 'build:jade', 'build:sections'])
 
 gulp.task('default', ['server', 'watch', 'build']);
