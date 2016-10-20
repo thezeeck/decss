@@ -23,7 +23,7 @@ var gulp = require('gulp'),
       },
       jade: {
         main: './app/index.jade',
-        lib: './app/lib/**/*.jade',
+        lib: './app/views/**/*.jade',
         watch: './app/**/*.jade',
         test: './test',
         prod: './prod'
