@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade'),
     babel = require('gulp-babel'),
-    //cssmin = require('gulp-cssmin'),
-    //rename = require('gulp-rename'),
+    gutil = require('gulp-util'),
+    ftp = require('gulp-ftp'),
     config = {
       style: {
         main: './app/sass/app.scss',
@@ -69,6 +69,16 @@ gulp.task('build:sections', function() {
     .pipe(gulp.dest(config.jade.test));
 });
 
+gulp.task('ftp', function () {
+    return gulp.src(config.jade.test)
+        .pipe(ftp({
+            host: 'ftp.decss.com.mx',
+            user: 'ftp-transfer@decss.com.mx',
+            pass: 'ctrlalt$uprF4FTP'
+        }))
+        .pipe(gutil.noop());
+});
+
 gulp.task('watch', function() {
   gulp.watch(config.js.watch, ['build:js']);
   gulp.watch(config.style.watch, ['build:css']);
@@ -77,4 +87,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['build:css', 'build:js', 'build:jade', 'build:sections'])
 
-gulp.task('default', ['server', 'watch', 'build']);
+gulp.task('default', ['server', 'watch', 'build', 'ftp']);

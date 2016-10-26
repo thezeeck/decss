@@ -2,6 +2,7 @@ html,
 body {
     overflow: auto;
     margin: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 body * {
@@ -13,5 +14,5 @@ body * {
   width: 100%;
 }
 
-@import "../lib/fotter/_template";
+@import "../lib/footer/_template";
 @import "../lib/header/_template";

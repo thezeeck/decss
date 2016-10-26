@@ -1,12 +1,22 @@
 doctype html
 html(lang='en')
   head
-    title Jade
+    title DeCSS
     meta(charset="UTF-8")
+    link(rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16")
+    link(rel="manifest" href="manifest.json")
+    link(rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="theme-color" content="#000000")
     link(rel="stylesheet", href="css/app.css")
+    link(href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900", rel="stylesheet")
   body
+    header
+      include lib/header/template.jade
     section.full-screen Presentación
     section.full-screen Marcela Lira
+      include lib/content-index/marcela-lira.jade
     section.full-screen Gonvill
     section.full-screen tracsa
     section.full-screen IBM Collection Assistance Portal
