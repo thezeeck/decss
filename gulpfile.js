@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     babel = require('gulp-babel'),
     gutil = require('gulp-util'),
-    ftp = require('gulp-ftp'),
+    //ftp = require('gulp-ftp'),
+    ftp = require( 'vinyl-ftp' ),
     config = {
       style: {
         main: './app/sass/app.scss',
@@ -69,15 +70,32 @@ gulp.task('build:sections', function() {
     .pipe(gulp.dest(config.jade.test));
 });
 
-gulp.task('ftp', function () {
-    return gulp.src(config.jade.test)
-        .pipe(ftp({
-            host: 'ftp.decss.com.mx',
-            user: 'ftp-transfer@decss.com.mx',
-            pass: 'ctrlalt$uprF4FTP'
-        }))
-        .pipe(gutil.noop());
-});
+gulp.task( 'deploy', function () {
+
+    var conn = ftp.create( {
+        host: 'ftp.decss.com.mx',
+        user: 'ftp-transfer@decss.com.mx',
+        password: 'ctrlalt$uprF4FTP',
+        parallel: 10,
+        log:      gutil.log
+    } );
+
+    var globs = [
+        'test/**',
+        'css/**',
+        'js/**',
+        'fonts/**',
+        'index.html'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: '.', buffer: false } )
+        .pipe( conn.newer( '/' ) ) // only upload newer files
+        .pipe( conn.dest( '/' ) );
+
+} );
 
 gulp.task('watch', function() {
   gulp.watch(config.js.watch, ['build:js']);
@@ -87,4 +105,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['build:css', 'build:js', 'build:jade', 'build:sections'])
 
-gulp.task('default', ['server', 'watch', 'build', 'ftp']);
+gulp.task('default', ['server', 'watch', 'build', 'deploy']);
