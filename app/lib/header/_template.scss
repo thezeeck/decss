@@ -3,4 +3,46 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+
+  nav {
+    background-color: rgba($primaryColor,0.6);
+    position: relative;
+
+    #brand {
+      width: 300px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 80px;
+
+      img {
+        height: calc(100% - 32px);
+        margin: 16px;
+      }
+    }
+
+    ul {
+      display: inline-block;
+      width: calc(100% - 304px);
+      padding: 0;
+      list-style: none;
+      text-align: right;
+      vertical-align: middle;
+
+      li {
+        display: inline-block;
+        margin: 0 16px 0 0;
+
+        a {
+          padding: 8px 12px;
+          color: $white;
+          text-decoration: none;
+          font-weight: lighter;
+          font-size: 12px;
+          text-transform: uppercase;
+          border: 1px solid rgba($white,.4);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 }

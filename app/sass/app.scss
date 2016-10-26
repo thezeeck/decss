@@ -14,5 +14,10 @@ body * {
   width: 100%;
 }
 
+main {
+    margin-top: 80px;
+}
+
+@import "vars";
 @import "../lib/footer/_template";
 @import "../lib/header/_template";

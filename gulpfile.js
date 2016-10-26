@@ -31,7 +31,7 @@ var gulp = require('gulp'),
     };
 
 gulp.task('server', function () {
-  gulp.src('./build')
+  gulp.src('./test')
     .pipe(webserver({
       host: '0.0.0.0',
       port: 8080,

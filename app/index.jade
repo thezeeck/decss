@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    title DeCSS
+    title Juan Sánchez
     meta(charset="UTF-8")
     link(rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png")
     link(rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32")
@@ -11,12 +11,17 @@ html(lang='en')
     meta(name="theme-color" content="#000000")
     link(rel="stylesheet", href="css/app.css")
     link(href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900", rel="stylesheet")
+    script(src="js/jquery-3.1.1.min.js")
   body
     header
       include lib/header/template.jade
-    section.full-screen Presentación
-    section.full-screen Marcela Lira
-      include lib/content-index/marcela-lira.jade
-    section.full-screen Gonvill
-    section.full-screen tracsa
-    section.full-screen IBM Collection Assistance Portal
+    main
+      section.full-screen
+        include lib/content-index/about.jade
+      #cases
+        section.full-screen Marcela Lira
+          include lib/content-index/marcela-lira.jade
+        section.full-screen Gonvill
+        section.full-screen tracsa
+        section.full-screen IBM Collection Assistance Portal
+    script(src="js/app.js")
