@@ -1,45 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Juan Sánchez</title>
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
-    <script src="js/jquery-3.1.1.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div id="brand"><img src="img/jp.svg" alt="Juan Sánchez"></div>
+<section id="tabControl">
+  <div param="urrea" class="brand"><img src="css/images/urrea-logo-menu.jpg" alt="Urrea"></div>
+  <div param="surtek" class="brand"><img src="css/images/surtek-logo-menu.jpg" alt="Surtek"></div>
+  <div param="lock" class="brand active-brand"><img src="css/images/lock-logo-menu.jpg" alt="Lock"></div>
+</section>
+<ul id="catList">
+  <li id="urreaCat">
+    <ul class="col">
+      <li class="category"><img src="css/images/herramientas-manuales.png" alt="Herramientas manuales"><span>Herramientas manuales</span>
         <ul>
-          <li><a href="#cases">Casos de estudio</a></li>
-          <li><a href="#">Experimentos</a></li>
-          <li><a href="contacto.php">Contacto</a></li>
-          <li><a href="http://www.decss.com.mx/blog/">Blog</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10118&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Dados y accesorios de impacto</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10117&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Dados y accesorios de mano</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10126&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Extractores</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10124&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas aisladas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10123&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas antichispa</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10128&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas automotrices</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10119&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas de torque</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10120&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para atornillar</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10129&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para construcción</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10122&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para golpear</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10125&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para tubo</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10116&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Juegos de herramientas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10133&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Llaves</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10121&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Pinzas y tijeras</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10127&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Prensas</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="full-screen">
-        <h1>¡Hola!</h1>
-        <p>My name is Juan Sánchez, I'm a Designer trying to make cool products.</p>
-        <p>Hit the Contact button to get in touch!</p>
-      </section>
-      <div id="cases">
-        <section class="full-screen">Marcela Lira
-          <div class="main">Hola</div>
-        </section>
-        <section class="full-screen">Gonvill</section>
-        <section class="full-screen">tracsa</section>
-        <section class="full-screen">IBM Collection Assistance Portal</section>
-      </div>
-    </main>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/herramientas-de-poder.png" alt="Herramientas de poder"><span>Herramientas de poder</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10135&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Eléctricas estacionarias</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10134&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Eléctricas portátiles</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10136&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Equipos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10137&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas neumáticas</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/consumibles.png" alt="Herramientas de poder"><span>Consumibles</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10138&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Corte, desbaste y consumibles</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/equipo-hidraulico-y-carga.png" alt="Equipo hidráulico y carga"><span>Equipo hidráulico y carga</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10139&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Equipos hidráulicos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10140&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Manejo de carga</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/organizacion-y-almacenamiento.png" alt="Organización y almacenamiento"><span>Organización y almacenamiento</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10142&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Organización y almacenamiento</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/diagnostico-medicion-y-trazo.png" alt="Diagnóstico, medición y trazo"><span>Diagnóstico, medición y trazo</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10143&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Diagnóstico, medición y trazo</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/iluminacion-y-electricos.png" alt="Iluminacion y eléctricos"><span>Iluminacion y eléctricos</span>
+        <ul>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10144&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Iluminación y eléctricos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/productos-ferreteros.png" alt="Productos ferreteros"><span>Productos ferreteros</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10145&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Productos ferreteros</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/equipo-de-seguridad.png" alt="Equipo de seguridad"><span>Equipo de seguridad</span>
+        <ul>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10141&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Protección y seguridad</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/mercadeo.png" alt="Mercadeo"><span>Mercadeo</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10146&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Literatura comercial</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10147&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Artículos promocionales</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10148&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Textiles</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10149&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10028511411410197&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Exhibición</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li id="surtekCat">
+    <ul class="col">
+      <li class="category"><img src="css/images/herramientas-manuales.png" alt="Herramientas manuales"><span>Herramientas manuales</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10131&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Agricultura y jardinería</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10118&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Dados y accesorios de impacto</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10117&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Dados y accesorios de mano</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10126&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Extractores</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10124&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas aisladas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10128&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas automotrices</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10119&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas de torque</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10120&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para atornillar</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10130&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para carpintería</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10129&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para construcción</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10122&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para golpear</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10125&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas para tubo</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10116&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Juegos de herramientas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10133&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Llaves</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10121&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Pinzas y tijeras</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10127&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Prensas</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/herramientas-de-poder.png" alt="Herramientas de poder"><span>Herramientas de poder</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10135&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Eléctricas estacionarias</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10134&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Eléctricas portátiles</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10136&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Equipos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10137&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Herramientas neumáticas</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/consumibles.png" alt="Equipo hidráulico y carga"><span>Consumibles</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10138&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Corte, desbaste y consumibles</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/equipo-hidraulico-y-carga.png" alt="Equipo hidráulico y carga"><span>Equipo hidráulico y carga</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10139&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Equipos hidráulicos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10140&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Manejo de carga</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/organizacion-y-almacenamiento.png" alt="Organización y almacenamiento"><span>Organización y almacenamiento</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10142&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Organización y almacenamiento</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/diagnostico-medicion-y-trazo.png" alt="Diagnóstico, medición y trazo"><span>Diagnóstico, medición y trazo</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10143&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Diagnóstico, medición y trazo</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/iluminacion-y-electricos.png" alt="Iluminacion y eléctricos"><span>Iluminacion y eléctricos</span>
+        <ul>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10144&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Iluminación y eléctricos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/productos-ferreteros.png" alt="Productos ferreteros"><span>Productos ferreteros</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10145&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Productos ferreteros</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/equipo-de-seguridad.png" alt="Equipo de seguridad"><span>Equipo de seguridad</span>
+        <ul>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10141&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Protección y seguridad</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/mercadeo.png" alt="Mercadeo"><span>Mercadeo</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10146&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Literatura comercial</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10147&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Artículos promocionales</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10148&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Textiles</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10149&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-100283117114116101107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Exhibición</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li id="lockCat" class="tab-category-active">
+    <ul class="col">
+      <li class="category"><img src="css/images/cerraduras-para-puertas.png" alt="Cerraduras para puertas"><span>Cerraduras para puertas</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10155&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerrojos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10153&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cilindros</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10152&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Conjuntos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10150&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Gatillos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10156&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Manijas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10151&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Manijas con mecanismo embutir</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10154&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Pomos</a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/candados.png" alt="Candados"><span>Candados</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10182&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Candados</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/accesorios-para-puertas.png" alt="Accesorios para puertas"><span>Accesorios para puertas</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10160&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Barras antipánico</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10157&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Bisagras de acero</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10158&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Bisagras vaivén</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10159&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cierrapuertas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10165&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Guardapolvos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10166&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Letras y números</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10163&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Mirillas</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10161&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Pasadores de seguridad</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10162&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Porta candados</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10167&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Señalamientos</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10164&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Topes</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/cerradura-y-accesorio-herreria.png" alt="Cerradura y accesorio herrería"><span>Cerradura y accesorio herrería</span>
+        <ul>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10175&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Bisagra para herrería</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10174&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Carretillas para puertas</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10169&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerraduras de barra</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10168&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerraduras de sobreponer</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10173&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerraduras para cortina</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10176&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerraduras puertas de aluminio</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10171&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Manija para ventana</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10170&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Pasadores para herrería</a></li>
+          <li> <a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10172&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Picaportes</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="col">
+      <li class="category"><img src="css/images/cerradura-y-accesorio-muebles.png" alt="Cerradura y accesorio muebles"><span>Cerradura y accesorio muebles</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10178&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Accesorios para mueble</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10179&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Bisagras bidimensionales</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10181&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Botones</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10177&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Cerraduras para mueble</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10180&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Jaladeras</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="category"><img src="css/images/mercadeo.png" alt="Mercadeo"><span>Mercadeo</span>
+        <ul>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10147&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Artículos promocionales</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10148&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Textiles</a></li>
+          <li><a href="https://webcomprod1.cloudapp.net/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10001&amp;urlLangId=-5&amp;beginIndex=0&amp;urlRequestType=Base&amp;categoryId=10149&amp;pageView=grid&amp;langId=-5&amp;catalogId=10101#facet:-10027611199107&amp;productBeginIndex:0&amp;orderBy:0&amp;pageView:grid&amp;minPrice:&amp;maxPrice:&amp;pageSize:&amp;" title="" target="">Exhibición</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
