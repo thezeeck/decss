@@ -4,8 +4,6 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     babel = require('gulp-babel'),
     gutil = require('gulp-util'),
-    //ftp = require('gulp-ftp'),
-    //ftp = require( 'vinyl-ftp' ),
     config = {
       style: {
         main: './app/sass/app.scss',
